@@ -1,0 +1,6 @@
+<?php
+/**
+ * The Functions of NobelDB.
+ *
+ * @package NobelDB - by Prabhat Kumar, http://prabhatkumar.org/.
+ */
