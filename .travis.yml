@@ -1,0 +1,4 @@
+# .travis.yml, for "Travis CI" metadata.
+# @require  : Grunt/Node.js®/NPM
+# @task     : grunt bump
+# @author   : Prabhat Kumar, http://prabhatkumar.org/.
