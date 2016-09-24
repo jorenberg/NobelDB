@@ -45,3 +45,5 @@ The methodology for data mining and steps in the process are:
 4. <b>Data Modelling</b>: Select and apply a variety of modelling techniques, and calibrate tool parameters to optimal values. Typically, there are several techniques for the same data mining problem type. Some techniques have specific requirements on the form of data. <i>Therefore, stepping back to the data preparation phase is often needed</i>.
 5. <b>Evaluation</b>: Thoroughly evaluate the model, and review the steps executed to construct the model, to be certain it properly achieves the business objectives. Determine if there is some important business issue that has not been sufficiently considered. At the end of this phase, a decision on the use of the data mining results is reached.
 6. <b>Deployment</b>: Organize and present the results of data mining. Deployment can be as simple as generating a report or as complex as implementing a repeatable data mining process.
+
+<b>Note</b>: Data mining is iterative. <i>A data mining process continues after a solution is deployed</i>.
