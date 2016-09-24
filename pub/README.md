@@ -34,3 +34,14 @@ When, I got the raw data, primarily some facts — I have obtained:
 <b>*</b> These are organizations.
 
 <i>Last Update</i>: 24<sup>th</sup> September, 2016.
+
+## Data Mining Process
+After, primary examination of obtained/acquired raw data, I'm going through Data Mining Process — that, I've designed specially for NobelDB®. Data Mining requires data preparation, model building, model testing and computing lift for a model, model applying (scoring), and model deployment.
+The methodology for data mining and steps in the process are:
+
+1. <b>Business Understanding</b>: Understand the project objectives and requirements from a business perspective, and then convert this knowledge into a data mining problem definition and a preliminary plan designed to achieve the objectives.
+2. <b>Data Understanding</b>: Start by collecting data, then get familiar with the data, to identify data quality problems, to discover first insights into the data, or to detect interesting subsets to form hypotheses about hidden information.
+3. <b>Data Preparation</b>: Includes all activities required to construct the final data set (data that will be fed into the modeling tool) from the initial raw data. Tasks include table, case, and attribute selection as well as transformation and cleaning of data for modelling tools.
+4. <b>Data Modelling</b>: Select and apply a variety of modelling techniques, and calibrate tool parameters to optimal values. Typically, there are several techniques for the same data mining problem type. Some techniques have specific requirements on the form of data. <i>Therefore, stepping back to the data preparation phase is often needed</i>.
+5. <b>Evaluation</b>: Thoroughly evaluate the model, and review the steps executed to construct the model, to be certain it properly achieves the business objectives. Determine if there is some important business issue that has not been sufficiently considered. At the end of this phase, a decision on the use of the data mining results is reached.
+6. <b>Deployment</b>: Organize and present the results of data mining. Deployment can be as simple as generating a report or as complex as implementing a repeatable data mining process.
