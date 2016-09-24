@@ -32,3 +32,5 @@ When, I got the raw data, primarily some facts — I have obtained:
 | <b>Total:</b> | 573            | 900                 | 341                     | 135                     | 97                        |
 
 <b>*</b> These are organizations.
+
+<i>Last Update</i>: 24<sup>th</sup> September, 2016.
