@@ -54,3 +54,9 @@ The methodology for data mining and steps in the process are:
 Thinking, I had wrongly obtained the datasets, then I started by re-examine them.
 <br/><br/>
 While working through the (1914 - 1918) and  (1939 - 1945) dataset I started to notice that it did not contain all the medal winners, many data were missing, but also many Nobel Laureates weren't in there. These descrepancies forced me to check each and every of the disciplines to see if my dataset contained the same number of medals as the number of nobel events held at Stockholm and Oslo.
+
+<b>But, this was not the fact of!</b>
+
+<b>Years without Nobel Prizes</b>
+<br/><br/>
+Since the start, in 1901, there are some years when the Nobel Prizes have not been awarded. The total number of times are <b>49</b>. <i>Most of them during World War I (1914 - 1918) and II (1939 - 1945)</i>.
