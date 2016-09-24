@@ -47,3 +47,10 @@ The methodology for data mining and steps in the process are:
 6. <b>Deployment</b>: Organize and present the results of data mining. Deployment can be as simple as generating a report or as complex as implementing a repeatable data mining process.
 
 <b>Note</b>: Data mining is iterative. <i>A data mining process continues after a solution is deployed</i>.
+
+## Data Preparation
+<b>Missing Nobel Medals in the Nobel dataset</b>:
+<br/><br/>
+Thinking, I had wrongly obtained the datasets, then I started by re-examine them.
+<br/><br/>
+While working through the (1914 - 1918) and  (1939 - 1945) dataset I started to notice that it did not contain all the medal winners, many data were missing, but also many Nobel Laureates weren't in there. These descrepancies forced me to check each and every of the disciplines to see if my dataset contained the same number of medals as the number of nobel events held at Stockholm and Oslo.
