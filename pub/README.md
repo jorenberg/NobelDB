@@ -18,3 +18,17 @@ When, I got the raw data, primarily some facts — I have obtained:
 - The Nobel Prize in Literature — has been awarded 108 times to 112 Nobel Laureates between 1901 and 2015.
 - The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel — has been awarded 47 times to 76 Laureates between 1969 and 2015.
 - <b>Note:</b> Between 1901 and 2015, the Nobel Prizes and the Prize in Economic Sciences were awarded 573 times to 900 people and organizations. With some receiving the Nobel Prize more than once, this makes a total of 870 individuals and 23 organizations.
+
+<b>573 Nobel Prizes<i>!</i></b> — From 1901 to 2015, the Nobel Prizes & the Prize in Economic Sciences were awarded 573 times.
+
+| Nobel Prize | Number of Prizes | Number of Laureates | Awarded to one Laureate | Shared by two Laureates | Shared by three Laureates |
+| ----------- | ---------------- | ------------------- | ----------------------- | ----------------------- | ------------------------- |
+| Physics     | 109	             | 201                 | 47                      | 32                      | 30                        |
+| Chemistry   | 107	             | 172                 | 63                      | 22                      | 22                        |
+| Medicine    | 106	             | 210                 | 38                      | 31                      | 37                        |
+| Literature  | 108	             | 112                 | 104                     | 04                      | --                        |
+| Peace       | 96	             | 103 + 26<b>*</b>    | 65                      | 29                      | 02                        |
+| Economic Sciences | 47         | 76                  | 24                      | 17                      | 06                        |
+| <b>Total:</b> | 573            | 900                 | 341                     | 135                     | 97                        |
+
+<b>*</b> These are organizations.
