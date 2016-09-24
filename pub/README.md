@@ -17,3 +17,4 @@ When, I got the raw data, primarily some facts — I have obtained:
 - The Nobel Prize in Physiology or Medicine — has been awarded 106 times to 210 Nobel Laureates between 1901 and 2015.
 - The Nobel Prize in Literature — has been awarded 108 times to 112 Nobel Laureates between 1901 and 2015.
 - The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel — has been awarded 47 times to 76 Laureates between 1969 and 2015.
+- <b>Note:</b> Between 1901 and 2015, the Nobel Prizes and the Prize in Economic Sciences were awarded 573 times to 900 people and organizations. With some receiving the Nobel Prize more than once, this makes a total of 870 individuals and 23 organizations.
