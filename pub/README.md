@@ -60,3 +60,5 @@ While working through the (1914 - 1918) and  (1939 - 1945) dataset I started to 
 <b>Years without Nobel Prizes</b>
 <br/><br/>
 Since the start, in 1901, there are some years when the Nobel Prizes have not been awarded. The total number of times are <b>49</b>. <i>Most of them during World War I (1914 - 1918) and II (1939 - 1945)</i>.
+
+<b>Why, I was thinking?</b><br/><br/>A common problem in a data mining task is that often in a dataset there are certain attributes with missing or incorrect permissible values. So, this renders the dataset imbalanced. Missing data handling is an important preparation step for most data discrimination or mining tasks. Inappropriate treatment of missing data may cause large errors or false results.
