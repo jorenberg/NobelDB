@@ -62,3 +62,14 @@ While working through the (1914 - 1918) and  (1939 - 1945) dataset I started to 
 Since the start, in 1901, there are some years when the Nobel Prizes have not been awarded. The total number of times are <b>49</b>. <i>Most of them during World War I (1914 - 1918) and II (1939 - 1945)</i>.
 
 <b>Why, I was thinking?</b><br/><br/>A common problem in a data mining task is that often in a dataset there are certain attributes with missing or incorrect permissible values. So, this renders the dataset imbalanced. Missing data handling is an important preparation step for most data discrimination or mining tasks. Inappropriate treatment of missing data may cause large errors or false results.
+
+<b>Nobel Prize	Years without a Prize</b>
+
+| Nobel Prize | Years without a Prize
+| ----------- | :-------------------- |
+| Physics     | 1916, 1931, 1934, 1940, 1941, 1942 |
+| Chemistry   | 1916, 1917, 1919, 1924, 1933, 1940, 1941, 1942 |
+| Medicine    | 1915, 1916, 1917, 1918, 1921, 1925, 1940, 1941, 1942 |
+| Literature  | 1914, 1918, 1935, 1940, 1941, 1942, 1943 |
+| Peace       | 1914, 1915, 1916, 1918, 1923, 1924, 1928, 1932, 1939, 1940, 1941, 1942, 1943, 1948, 1955, 1956, 1966, 1967, 1972 |
+| Economic Sciences | - |
