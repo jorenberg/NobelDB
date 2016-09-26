@@ -75,3 +75,8 @@ Since the start, in 1901, there are some years when the Nobel Prizes have not be
 | Economic Sciences | - |
 
 After, Data Acquiring, Data Mining, Data Cleaning, I did Data Preparation — for this all dataset written in `CSV` format to easy manipulation. Then, committed in [raw](https://github.com/NobelDB/NobelDB/tree/master/pub/data/raw) directory. This directory contains all data since the very first Nobel Prize in 1901.
+
+## Data Transformation
+A Data Transformation converts a set of data values from the data format of a source data system into the data format of a destination data system. It is the application of a deterministic mathematical function to each point in a data set — that is, each data point <i>z<sub>i</sub></i> is replaced with the transformed value <i>y<sub>i</sub></i> = <i>f</i>(<i>z<sub>i</sub></i>), where <i>f</i> is a function. Transforms are usually applied so that the data appear to more closely meet the assumptions of a statistical inference procedure that is to be applied, or to improve the interpretability or appearance of graphs.
+
+After completion of it, I have committed all dataset in to [tank](https://github.com/NobelDB/NobelDB/tree/master/pub/data/tank) directory. This directory contains all transformed data since the very first Nobel Prize in 1901.
