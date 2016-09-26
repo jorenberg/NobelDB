@@ -1,0 +1,345 @@
+[
+  {
+    "Name": "Marie Curie",
+    "Category": "Chemistry",
+    "Field": "Nuclear Chemistry",
+    "Year": 1911,
+    "Frequency": 1
+  },
+  {
+    "Name": "Irène Joliot-Curie",
+    "Category": "Chemistry",
+    "Field": "Nuclear Chemistry",
+    "Year": 1935,
+    "Frequency": 1
+  },
+  {
+    "Name": "Dorothy Crowfoot Hodgkin",
+    "Category": "Chemistry",
+    "Field": "Biochemistry/Structural Chemistry",
+    "Year": 1964,
+    "Frequency": 1
+  },
+  {
+    "Name": "Ada E. Yonath",
+    "Category": "Chemistry",
+    "Field": "Biochemistry/Structural Chemistry",
+    "Year": 2009,
+    "Frequency": 1
+  },
+  {
+    "Name": "Elinor Ostrom",
+    "Category": "Economic Sciences",
+    "Field": "Economic Governance",
+    "Year": 2009,
+    "Frequency": 1
+  },
+  {
+    "Name": "Selma Lagerlöf",
+    "Category": "Literature",
+    "Field": "Prose",
+    "Year": 1909,
+    "Frequency": 1
+  },
+  {
+    "Name": "Grazia Deledda",
+    "Category": "Literature",
+    "Field": "Prose",
+    "Year": 1926,
+    "Frequency": 1
+  },
+  {
+    "Name": "Sigrid Undset",
+    "Category": "Literature",
+    "Field": "Prose",
+    "Year": 1928,
+    "Frequency": 1
+  },
+  {
+    "Name": "Pearl Buck",
+    "Category": "Literature",
+    "Field": "Prose",
+    "Year": 1938,
+    "Frequency": 1
+  },
+  {
+    "Name": "Gabriela Mistral",
+    "Category": "Literature",
+    "Field": "Poetry",
+    "Year": 1945,
+    "Frequency": 1
+  },
+  {
+    "Name": "Nelly Sachs",
+    "Category": "Literature",
+    "Field": "Poetry",
+    "Year": 1966,
+    "Frequency": 1
+  },
+  {
+    "Name": "Nadine Gordimer",
+    "Category": "Literature",
+    "Field": "Prose",
+    "Year": 1991,
+    "Frequency": 1
+  },
+  {
+    "Name": "Toni Morrison",
+    "Category": "Literature",
+    "Field": "Prose",
+    "Year": 1993,
+    "Frequency": 1
+  },
+  {
+    "Name": "Wislawa Szymborska",
+    "Category": "Literature",
+    "Field": "Poetry",
+    "Year": 1996,
+    "Frequency": 1
+  },
+  {
+    "Name": "Elfriede Jelinek",
+    "Category": "Literature",
+    "Field": "Prose",
+    "Year": 2004,
+    "Frequency": 1
+  },
+  {
+    "Name": "Doris Lessing",
+    "Category": "Literature",
+    "Field": "Prose",
+    "Year": 2007,
+    "Frequency": 1
+  },
+  {
+    "Name": "Herta Müller",
+    "Category": "Literature",
+    "Field": "Prose",
+    "Year": 2009,
+    "Frequency": 1
+  },
+  {
+    "Name": "Alice Munro",
+    "Category": "Literature",
+    "Field": "Prose",
+    "Year": 2013,
+    "Frequency": 1
+  },
+  {
+    "Name": "Svetlana Alexievich",
+    "Category": "Literature",
+    "Field": "Prose",
+    "Year": 2015,
+    "Frequency": 1
+  },
+  {
+    "Name": "Gerty Cori",
+    "Category": "Medicine/Physiology",
+    "Field": "Metabolism",
+    "Year": 1947,
+    "Frequency": 1
+  },
+  {
+    "Name": "Rosalyn Yalow",
+    "Category": "Medicine/Physiology",
+    "Field": "Metabolism",
+    "Year": 1977,
+    "Frequency": 1
+  },
+  {
+    "Name": "Barbara McClintock",
+    "Category": "Medicine/Physiology",
+    "Field": "Genetics",
+    "Year": 1983,
+    "Frequency": 1
+  },
+  {
+    "Name": "Rita Levi-Montalcini",
+    "Category": "Medicine/Physiology",
+    "Field": "Biochemistry",
+    "Year": 1986,
+    "Frequency": 1
+  },
+  {
+    "Name": "Gertrude B. Elion",
+    "Category": "Medicine/Physiology",
+    "Field": "Pharmacology",
+    "Year": 1988,
+    "Frequency": 1
+  },
+  {
+    "Name": "Christiane Nüsslein-Volhard",
+    "Category": "Medicine/Physiology",
+    "Field": "Genetics",
+    "Year": 1995,
+    "Frequency": 1
+  },
+  {
+    "Name": "Linda B. Buck",
+    "Category": "Medicine/Physiology",
+    "Field": "Genetics/Neurophysiology",
+    "Year": 2004,
+    "Frequency": 1
+  },
+  {
+    "Name": "Françoise Barré-Sinoussi",
+    "Category": "Medicine/Physiology",
+    "Field": "Virology",
+    "Year": 2008,
+    "Frequency": 1
+  },
+  {
+    "Name": "Carol W. Greider",
+    "Category": "Medicine/Physiology",
+    "Field": "Genetics",
+    "Year": 2009,
+    "Frequency": 1
+  },
+  {
+    "Name": "Elizabeth H. Blackburn",
+    "Category": "Medicine/Physiology",
+    "Field": "Genetics",
+    "Year": 2009,
+    "Frequency": 1
+  },
+  {
+    "Name": "May-Britt Moser",
+    "Category": "Medicine/Physiology",
+    "Field": "Spatial Behavior",
+    "Year": 2014,
+    "Frequency": 1
+  },
+  {
+    "Name": "Youyou Tu",
+    "Category": "Medicine/Physiology",
+    "Field": "Disease (Malaria)",
+    "Year": 2015,
+    "Frequency": 1
+  },
+  {
+    "Name": "Marie Curie",
+    "Category": "Physics",
+    "Field": "Nuclear Physics",
+    "Year": 1903,
+    "Frequency": 1
+  },
+  {
+    "Name": "Maria Goeppert Mayer",
+    "Category": "Physics",
+    "Field": "Nuclear Physics",
+    "Year": 1963,
+    "Frequency": 1
+  },
+  {
+    "Name": "Bertha von Suttner",
+    "Category": "Peace",
+    "Field": "Peace Movement",
+    "Year": 1905,
+    "Frequency": 1
+  },
+  {
+    "Name": "Jane Addams",
+    "Category": "Peace",
+    "Field": "Peace Movement",
+    "Year": 1931,
+    "Frequency": 1
+  },
+  {
+    "Name": "Emily Greene Balch",
+    "Category": "Peace",
+    "Field": "Peace Movement",
+    "Year": 1946,
+    "Frequency": 1
+  },
+  {
+    "Name": "Mairead Corrigan",
+    "Category": "Peace",
+    "Field": "Peace Movement",
+    "Year": 1976,
+    "Frequency": 1
+  },
+  {
+    "Name": "Betty Williams",
+    "Category": "Peace",
+    "Field": "Peace Movement",
+    "Year": 1976,
+    "Frequency": 1
+  },
+  {
+    "Name": "Mother Teresa",
+    "Category": "Peace",
+    "Field": "Humanitarian Work",
+    "Year": 1979,
+    "Frequency": 1
+  },
+  {
+    "Name": "Alva Myrdal",
+    "Category": "Peace",
+    "Field": "Arms Control and Disarmament",
+    "Year": 1982,
+    "Frequency": 1
+  },
+  {
+    "Name": "Aung San Suu Kyi",
+    "Category": "Peace",
+    "Field": "Human Rights",
+    "Year": 1991,
+    "Frequency": 1
+  },
+  {
+    "Name": "Rigoberta Menchú Tum",
+    "Category": "Peace",
+    "Field": "Human Rights",
+    "Year": 1992,
+    "Frequency": 1
+  },
+  {
+    "Name": "Jody Williams",
+    "Category": "Peace",
+    "Field": "Arms Control and Disarmament",
+    "Year": 1997,
+    "Frequency": 1
+  },
+  {
+    "Name": "Shirin Ebadi",
+    "Category": "Peace",
+    "Field": "Human Rights",
+    "Year": 2003,
+    "Frequency": 1
+  },
+  {
+    "Name": "Wangari Maathai",
+    "Category": "Peace",
+    "Field": "Humanitarian Work",
+    "Year": 2004,
+    "Frequency": 1
+  },
+  {
+    "Name": "Tawakkol Karman",
+    "Category": "Peace",
+    "Field": "Peace Movement/Women's Rights",
+    "Year": 2011,
+    "Frequency": 1
+  },
+  {
+    "Name": "Leymah Gbowee",
+    "Category": "Peace",
+    "Field": "Peace Movement/Women's Rights",
+    "Year": 2011,
+    "Frequency": 1
+  },
+  {
+    "Name": "Ellen Johnson Sirleaf",
+    "Category": "Peace",
+    "Field": "Peace Movement/Women's Rights",
+    "Year": 2011,
+    "Frequency": 1
+  },
+  {
+    "Name": "Malala Yousafzai",
+    "Category": "Peace",
+    "Field": "Children Education",
+    "Year": 2014,
+    "Frequency": 1
+  }
+]
