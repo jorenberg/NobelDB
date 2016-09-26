@@ -1,0 +1,62 @@
+[
+  {
+    "Category": "Chemestry",
+    "Average Age of Laureates": 58,
+    "Prizes Won by Women": 5,
+    "Prizes Won by Men": 204,
+    "Percentage Prizes Won by Women": "2%",
+    "Percentage Prizes Won by Men": "98%",
+    "REMOVE Average Female Winners (All Countries)": 10,
+    "REMOVE Average Female Winners (All Countries) (%)": 0.1
+  },
+  {
+    "Category": "Economics",
+    "Average Age of Laureates": 68,
+    "Prizes Won by Women": 1,
+    "Prizes Won by Men": 88,
+    "Percentage Prizes Won by Women": "1%",
+    "Percentage Prizes Won by Men": "99%",
+    "REMOVE Average Female Winners (All Countries)": 10,
+    "REMOVE Average Female Winners (All Countries) (%)": 0.1
+  },
+  {
+    "Category": "Literature",
+    "Average Age of Laureates": 65,
+    "Prizes Won by Women": 15,
+    "Prizes Won by Men": 109,
+    "Percentage Prizes Won by Women": "12%",
+    "Percentage Prizes Won by Men": "88%",
+    "REMOVE Average Female Winners (All Countries)": 10,
+    "REMOVE Average Female Winners (All Countries) (%)": 0.1
+  },
+  {
+    "Category": "Medicine/Physiology",
+    "Average Age of Laureates": 58,
+    "Prizes Won by Women": 13,
+    "Prizes Won by Men": 237,
+    "Percentage Prizes Won by Women": "5%",
+    "Percentage Prizes Won by Men": "95%",
+    "REMOVE Average Female Winners (All Countries)": 10,
+    "REMOVE Average Female Winners (All Countries) (%)": 0.1
+  },
+  {
+    "Category": "Peace",
+    "Average Age of Laureates": 62,
+    "Prizes Won by Women": 20,
+    "Prizes Won by Men": 101,
+    "Percentage Prizes Won by Women": "17%",
+    "Percentage Prizes Won by Men": "83%",
+    "REMOVE Average Female Winners (All Countries)": 10,
+    "REMOVE Average Female Winners (All Countries) (%)": 0.1
+  },
+  {
+    "Category": "Physics",
+    "Average Age of Laureates": 55,
+    "Prizes Won by Women": 4,
+    "Prizes Won by Men": 230,
+    "Percentage Prizes Won by Women": "2%",
+    "Percentage Prizes Won by Men": "98%",
+    "REMOVE Average Female Winners (All Countries)": 10,
+    "REMOVE Average Female Winners (All Countries) (%)": 0.1
+  }
+]
