@@ -1,0 +1,58 @@
+[
+  {
+    "Nobel Prize": "Chemistry",
+    "Number of Prizes": 107,
+    "Number of Laureates": 172,
+    "Awarded to one Laureate": 63,
+    "Shared by two Laureates": 22,
+    "Shared by three Laureates": 22
+  },
+  {
+    "Nobel Prize": "Economic Sciences",
+    "Number of Prizes": 47,
+    "Number of Laureates": 76,
+    "Awarded to one Laureate": 24,
+    "Shared by two Laureates": 17,
+    "Shared by three Laureates": 6
+  },
+  {
+    "Nobel Prize": "Literature",
+    "Number of Prizes": 108,
+    "Number of Laureates": 112,
+    "Awarded to one Laureate": 104,
+    "Shared by two Laureates": 4,
+    "Shared by three Laureates": "--"
+  },
+  {
+    "Nobel Prize": "Medicine / Physiology",
+    "Number of Prizes": 106,
+    "Number of Laureates": 210,
+    "Awarded to one Laureate": 38,
+    "Shared by two Laureates": 31,
+    "Shared by three Laureates": 37
+  },
+  {
+    "Nobel Prize": "Physics",
+    "Number of Prizes": 109,
+    "Number of Laureates": 201,
+    "Awarded to one Laureate": 47,
+    "Shared by two Laureates": 32,
+    "Shared by three Laureates": 30
+  },
+  {
+    "Nobel Prize": "Peace",
+    "Number of Prizes": 96,
+    "Number of Laureates": "103 + 26*",
+    "Awarded to one Laureate": 65,
+    "Shared by two Laureates": 29,
+    "Shared by three Laureates": 2
+  },
+  {
+    "Nobel Prize": "Total:",
+    "Number of Prizes": 573,
+    "Number of Laureates": 900,
+    "Awarded to one Laureate": 341,
+    "Shared by two Laureates": 135,
+    "Shared by three Laureates": 97
+  }
+]
