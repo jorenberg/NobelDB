@@ -73,3 +73,5 @@ Since the start, in 1901, there are some years when the Nobel Prizes have not be
 | Literature  | 1914, 1918, 1935, 1940, 1941, 1942, 1943 |
 | Peace       | 1914, 1915, 1916, 1918, 1923, 1924, 1928, 1932, 1939, 1940, 1941, 1942, 1943, 1948, 1955, 1956, 1966, 1967, 1972 |
 | Economic Sciences | - |
+
+After, Data Acquiring, Data Mining, Data Cleaning, I did Data Preparation — for this all dataset written in `CSV` format to easy manipulation. Then, committed in [raw](https://github.com/NobelDB/NobelDB/tree/master/pub/data/raw) directory. This directory contains all data since the very first Nobel Prize in 1901.
