@@ -167,3 +167,5 @@ An <i>Eulerian cycle</i>, <i>Eulerian circuit</i> or <i>Euler tour</i> in an <i>
 <b>Theorem:</b>
 
 <i>A connected graph is <b>Eulerian</b> if and only if every vertex has even degree</i>.
+
+<b>To do</b> — entire work of data visualization, I'm using R, Python, PHP, JavaScript (d3), and a very specific JSON from R, trying to do as many calculations in R and not in JavaScript (because I find it much much easier and straightforward to do in R).<br/><br/>Many Thanks.
