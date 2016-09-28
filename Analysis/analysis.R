@@ -203,3 +203,17 @@ ggplot(subset(sharecat, share > 0)) + geom_bar(aes(category, Freq), stat = "iden
 # Note: Individual winners are more common in all categories, notably literature and peace.
 #       In the sciences, two or three winners are roughly equally common;
 #       chemistry stands out with more individual winners than medicine or physics.
+
+# 4. Ages and Nobel Laureates
+# -> How old are the laureates? The data does not include the date that prizes were awarded,
+# -> so for those cases where birth date is available,
+# -> we calculate age at the end of the year in which laureates won their prize.
+# -> Median age is indicated by a point in this plot.
+
+# 4.1 Ages Distribution by Category
+prizes$born <- rep(nobels$laureates$born, cnt)
+prizes$age <- as.Date(paste(prizes$year, "12-31", sep = "-"), "%Y-%m-%d") - as.Date(prizes$born, "%Y-%m-%d")
+ggplot(prizes[!is.na(prizes$category), ]) + geom_violin(aes(category, as.numeric(age) / 365), fill = "skyblue3") +
+  theme_bw() +
+  stat_summary(aes(category, as.numeric(age) / 365), fun.y = "median", geom = "point") +
+  labs(x = "Category", y = "Age (years)", title = "Age Distribution of Nobel Laureates by Category")
