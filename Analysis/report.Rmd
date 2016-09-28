@@ -12,3 +12,6 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+# Executive Summary
+This report provides an analysis of Nobel Prize Winners in their fields since the very first **Nobel Prize in 1901**. This document illustrates some ways to analyse data from the [Nobel Prize API](https://nobelprize.readme.io/) using the R programming language. The analysis includes multiple prize winners, gender gap, gender by category - Chemestry/Economics/Literature/Medicine and Physiology/Peace/Physics, gender over time, nobel prize share, distribution by age, and distribution by countries etc.
