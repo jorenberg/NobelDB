@@ -22,3 +22,11 @@ if (!require("ggplot2")) {
   } else {
   install.packages("ggplot2")
 }
+
+# jsonlite
+# jsonlite is a Robust, High Performance JSON Parser and Generator for R.
+if (!require("jsonlite")) {
+  stop('The package jsonlite was not installed!')
+  } else {
+  install.packages("jsonlite")
+}
