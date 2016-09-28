@@ -54,3 +54,11 @@ if (!require("tidyr")) {
   } else {
   install.packages("tidyr")
 }
+
+# xtable
+# xtable - Export Tables to LaTeX or HTML.
+if (!require("xtable")) {
+  stop('The package xtable was not installed!')
+  } else {
+  install.packages("xtable")
+}
