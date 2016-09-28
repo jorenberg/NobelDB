@@ -234,3 +234,25 @@ ggplot(prizes[!is.na(prizes$category), ]) + geom_point(aes(year, as.numeric(age)
 #       All other categories show an upward trend in age.
 #       This is especially pronounced for physics and chemistry,
 #       where laureates were much younger in the early part of the 20th century.
+
+# 5. Countries wise Distribution Analysis
+
+# 5.1 Countries by Category
+# -> It is possible to calculate the number of prizes awarded by country of birth,
+# -> but do the absolute numbers really tell us anything?
+# -> Clearly there should be some kind of correction as larger,
+# -> wealthier countries might be expected to produce more laureates.
+# -> However, this is not straightforward - what correction should be applied? Using current population,
+# -> for example, might generate a bias towards very small countries with only one or two laureates.
+# -> In addition, the characteristics of countries (population, GDP, borders) change over time.
+
+# ->  We will therefore simply present the absolute numbers and let readers draw their own conclusions
+# ->  regarding the “success” of individual countries. This chart uses ISO 3166 2-letter country codes.
+prizes$country <- rep(nobels$laureates$bornCountryCode, cnt)
+p3 <- as.data.frame(table(prizes$category, prizes$country), stringsAsFactors = FALSE)
+ggplot(p3) + geom_bar(aes(Var2, Freq, fill = Var1), stat = "identity", position = "stack") + 
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, size = rel(0.82))) + 
+  labs(x = "Country Code", y = "Count", title = "All Nobel Prizes by Country and Category") + 
+  scale_fill_manual(values = c("#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#2c7fb8", "#253494"),
+                    name = "Category")
