@@ -46,3 +46,11 @@ if (!require("dplyr")) {
   } else {
   install.packages("dplyr")
 }
+
+# tidyr
+# tidyr - easily tidy data with spread and gather functions.
+if (!require("tidyr")) {
+  stop('The package tidyr was not installed!')
+  } else {
+  install.packages("tidyr")
+}
