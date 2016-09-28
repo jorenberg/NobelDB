@@ -38,3 +38,11 @@ if (!require("plyr")) {
   } else {
   install.packages("plyr")
 }
+
+# dplyr
+# dplyr is a grammar of data manipulation.
+if (!require("dplyr")) {
+  stop('The package dplyr was not installed!')
+  } else {
+  install.packages("dplyr")
+}
