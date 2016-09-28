@@ -88,3 +88,5 @@ setwd("~/Users/nobeldb/Desktop/NobelDB")
 theData <- "http://api.nobelprize.org/v1/laureate.json"
 # -> Assigning to a variable - nobels.
 nobels <- fromJSON(theData)
+# -> Print the names attribute of the 'nobels' data set.
+names(nobels)
