@@ -97,3 +97,6 @@ names(nobels$laureates)
 ##  [7] "bornCountryCode" "bornCity"        "diedCountry"
 ## [10] "diedCountryCode" "diedCity"        "gender"
 ## [13] "prizes"
+names(nobels$laureates$prizes[[1]])
+## [1] "year"         "category"     "share"        "motivation"
+## [5] "affiliations"
