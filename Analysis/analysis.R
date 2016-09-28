@@ -78,3 +78,7 @@ if (!require("networkD3")) {
   } else {
   install.packages("networkD3")
 }
+
+# Setting Working Directory
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
+setwd("~/Users/nobeldb/Desktop/NobelDB")
