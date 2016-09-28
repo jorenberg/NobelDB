@@ -147,3 +147,13 @@ pg <- as.data.frame(table(prizes$category, prizes$gender), stringsAsFactors = FA
 ggplot(pg) + geom_bar(aes(Var1, Freq), stat = "identity", fill = "skyblue3") +
   theme_bw() +
   facet_grid(Var2 ~ .) + labs(x = "Category", y = "Count", title = "All Nobel Prizes by Gender and Category")
+# 2.4 Gender over Time
+# -> Is there any indication of an increase in female laureates over time?
+p5 <- as.data.frame(table(prizes$year, prizes$gender), stringsAsFactors = FALSE)
+colnames(p5) <- c("year", "gender", "Freq")
+p5.1 <- mutate(group_by(p5, gender), cumsum = cumsum(Freq))
+ggplot(subset(p5.1, gender != "org")) + geom_point(aes(year, log(cumsum), color = gender)) +
+  theme_bw() +
+  scale_x_discrete(breaks = seq(1900, 2015, 10)) +
+  scale_color_manual(values = c("darkorange", "skyblue3")) +
+  labs(x = "Year", y = "log(cumulative sum) of laureates", title = "Cumulative Sum of Nobel Laureates by Gender over Time")
