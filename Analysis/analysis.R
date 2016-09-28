@@ -115,3 +115,10 @@ names(nobels$laureates$prizes[[1]])
 multi <- which(sapply(nobels$laureates$prizes, function(x) nrow(x)) > 1)
 winners <- nobels$laureates[multi, c("firstname", "surname", "born", "bornCountry")]
 print(xtable(winners), type = "html", comment = FALSE, include.rownames = FALSE)
+
+# Result of Analysis.
+# Four individuals have won two prizes:
+#  1. Marie Curie (physics, chemistry);
+#  2. John Bardeen (physics);
+#  3. Linus Pauling (chemistry, peace);
+#  4. Frederick Sanger (chemistry).
