@@ -86,3 +86,5 @@ setwd("~/Users/nobeldb/Desktop/NobelDB")
 # 1. Getting the Data
 # -> We use the Nobel Prize API to fetch Nobel Laureates Data in JSON format.
 theData <- "http://api.nobelprize.org/v1/laureate.json"
+# -> Assigning to a variable - nobels.
+nobels <- fromJSON(theData)
