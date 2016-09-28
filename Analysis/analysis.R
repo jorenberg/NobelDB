@@ -191,3 +191,11 @@ ggplot(shared[shared$Var1 != 0, ]) + geom_bar(aes(Var1, Freq), stat = "identity"
   labs(x = "Number of laureates", y = "Count", title = "Laureates per Nobel Prize")
 
 # Note: Individual winners are most common.
+
+# 3.1 Nobel Prize Share by Category
+# -> Are there any notable differences in prize sharing between fields?
+sharecat <- as.data.frame(table(share$category, share$Freq), stringsAsFactors = FALSE)
+colnames(sharecat) <- c("category", "share", "Freq")
+ggplot(subset(sharecat, share > 0)) + geom_bar(aes(category, Freq), stat = "identity", fill = "skyblue3") +
+  theme_bw() +
+  facet_grid(share ~ .) + labs(x = "Category", y = "Count", title = "Laureates per Nobel Prize by Category")
