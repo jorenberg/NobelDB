@@ -180,3 +180,12 @@ ggplot(subset(p6.1, gender != "org")) + geom_point(aes(year, log(cumsum), color 
 #       only one woman has won the prize for economics,
 #       two women have won for physics and
 #       four have won for chemistry.
+
+# 3. Nobel Prize Share
+# -> Prizes may be shared by no more than three people. How often has this occurred?
+share <- as.data.frame(table(prizes$year, prizes$category), stringsAsFactors = FALSE)
+colnames(share) <- c("year", "category", "Freq")
+shared <- as.data.frame(table(share$Freq), stringsAsFactors = FALSE)
+ggplot(shared[shared$Var1 != 0, ]) + geom_bar(aes(Var1, Freq), stat = "identity", fill = "skyblue3") +
+  theme_bw() +
+  labs(x = "Number of laureates", y = "Count", title = "Laureates per Nobel Prize")
