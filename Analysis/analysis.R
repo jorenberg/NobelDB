@@ -217,3 +217,6 @@ ggplot(prizes[!is.na(prizes$category), ]) + geom_violin(aes(category, as.numeric
   theme_bw() +
   stat_summary(aes(category, as.numeric(age) / 365), fun.y = "median", geom = "point") +
   labs(x = "Category", y = "Age (years)", title = "Age Distribution of Nobel Laureates by Category")
+
+# Note: Median age is over 50 for all categories; physics laureates have the youngest median and economics the oldest.
+#       The peace prize is skewed by a recent very young “outlier” — Malala Yousafzai (Age-17).
