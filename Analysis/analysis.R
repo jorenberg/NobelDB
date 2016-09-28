@@ -11,3 +11,6 @@
 # ====================================================
 # To Do     : Analysis of Nobel Laureates Data.
 # ====================================================
+
+# Remove Objects from a Specified Environment.
+rm(list = ls())
