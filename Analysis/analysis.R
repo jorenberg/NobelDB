@@ -70,3 +70,11 @@ if (!require("cluster")) {
   } else {
   install.packages("cluster")
 }
+
+# networkD3
+# networkD3 - D3 JavaScript Network Graphs from R.
+if (!require("networkD3")) {
+  stop('The package networkD3 was not installed!')
+  } else {
+  install.packages("networkD3")
+}
