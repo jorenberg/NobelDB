@@ -129,3 +129,10 @@ gender <- as.data.frame(table(nobels$laureates$gender), stringsAsFactors = FALSE
 ggplot(gender) + geom_bar(aes(Var1, Freq), stat = "identity", fill = "skyblue3") +
   theme_bw() +
   labs(x = "Gender", y = "Count", title = "All Nobel Prizes by Gender")
+
+# Result of Analysis.
+# Nobel Prize Awarded to Women!
+# The Nobel Prize and Prize in Economic Sciences have been awarded to women 49 times between 1901 and 2015.
+# Only one woman, Marie Curie, has been honoured twice, with the 1903 Nobel Prize in Physics and the 1911 Nobel Prize in Chemistry.
+# This means that 48 women in total have been awarded the Nobel Prize between 1901 and 2015.
+# √ 26 are organizations and rest of laureates are male.
