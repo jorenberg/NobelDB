@@ -229,3 +229,8 @@ ggplot(prizes[!is.na(prizes$category), ]) + geom_point(aes(year, as.numeric(age)
   facet_wrap(~category) +
   scale_x_discrete(breaks = seq(1900, 2015, 25)) +
   labs(x = "Year", y = "Age(years) at end of year", title = "Age of Nobel Laureates Over Time by Category")
+
+# Note: There is a downward trend in age for the peace prize, again somewhat skewed by a young outlier.
+#       All other categories show an upward trend in age.
+#       This is especially pronounced for physics and chemistry,
+#       where laureates were much younger in the early part of the 20th century.
