@@ -151,3 +151,30 @@ ggplot(subset(p6.1, gender != "org")) + geom_point(aes(year, log(cumsum), color 
 There is some indication that since about 1975, more women have won prizes in medicine and peace than in the preceding years. The rate of awards to women for literature also rises after about 1990.
 
 To date, only one woman has won the prize for economics, two women have won for physics and four have won for chemistry.
+
+### Nobel Prize Share
+Prizes may be shared by no more than three people. How often has this occurred?
+
+```{r nobel prize share analysis}
+share <- as.data.frame(table(prizes$year, prizes$category), stringsAsFactors = FALSE)
+colnames(share) <- c("year", "category", "Freq")
+shared <- as.data.frame(table(share$Freq), stringsAsFactors = FALSE)
+ggplot(shared[shared$Var1 != 0, ]) + geom_bar(aes(Var1, Freq), stat = "identity", fill = "skyblue3") +
+  theme_bw() +
+  labs(x = "Number of laureates", y = "Count", title = "Laureates per Nobel Prize")
+```
+
+**Note**:- Individual winners are most common.
+
+### Nobel Prize Share by Category
+Are there any notable differences in prize sharing between fields?
+
+```{r nobel prize share analysis by category}
+sharecat <- as.data.frame(table(share$category, share$Freq), stringsAsFactors = FALSE)
+colnames(sharecat) <- c("category", "share", "Freq")
+ggplot(subset(sharecat, share > 0)) + geom_bar(aes(category, Freq), stat = "identity", fill = "skyblue3") +
+  theme_bw() +
+  facet_grid(share ~ .) + labs(x = "Category", y = "Count", title = "Laureates per Nobel Prize by Category")
+```
+
+**Note**:- Individual winners are more common in all categories, notably literature and peace. In the sciences, two or three winners are roughly equally common; chemistry stands out with more individual winners than medicine or physics.
