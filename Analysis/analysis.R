@@ -199,3 +199,7 @@ colnames(sharecat) <- c("category", "share", "Freq")
 ggplot(subset(sharecat, share > 0)) + geom_bar(aes(category, Freq), stat = "identity", fill = "skyblue3") +
   theme_bw() +
   facet_grid(share ~ .) + labs(x = "Category", y = "Count", title = "Laureates per Nobel Prize by Category")
+
+# Note: Individual winners are more common in all categories, notably literature and peace.
+#       In the sciences, two or three winners are roughly equally common;
+#       chemistry stands out with more individual winners than medicine or physics.
