@@ -37,3 +37,16 @@ if (!require("jsonlite") | !require("ggplot2") | !require("plyr") | !require("dp
   library("xtable")
 }
 ```
+
+## Data Collection
+Before, I even started searching online I already had an idea in my head about the data that I wanted to play with this month; thanks to Nobel Foundation, they have developed a nice API and I got it through - http://api.nobelprize.org/.
+
+```{r data collection}
+theData <- "http://api.nobelprize.org/v1/laureate.json"
+nobels <- fromJSON(theData)
+names(nobels)
+```
+
+```{r data}
+## [1] "laureates"
+```
