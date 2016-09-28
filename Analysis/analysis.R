@@ -189,3 +189,5 @@ shared <- as.data.frame(table(share$Freq), stringsAsFactors = FALSE)
 ggplot(shared[shared$Var1 != 0, ]) + geom_bar(aes(Var1, Freq), stat = "identity", fill = "skyblue3") +
   theme_bw() +
   labs(x = "Number of laureates", y = "Count", title = "Laureates per Nobel Prize")
+
+# Note: Individual winners are most common.
