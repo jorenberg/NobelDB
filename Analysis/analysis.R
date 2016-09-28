@@ -171,3 +171,12 @@ ggplot(subset(p6.1, gender != "org")) + geom_point(aes(year, log(cumsum), color 
   scale_color_manual(values = c("darkorange", "skyblue3")) +
   labs(x = "Year", y = "log(cumulative sum) of laureates",
        title = "Cumulative Sum of Nobel Laureates by Gender and Category over Time")
+  
+# Conclusion of Gender Analysis.
+# -> There is some indication that since about 1975,
+# -> more women have won prizes in medicine and peace than in the preceding years.
+# -> The rate of awards to women for literature also rises after about 1990.
+# -> To date,
+#       only one woman has won the prize for economics,
+#       two women have won for physics and
+#       four have won for chemistry.
