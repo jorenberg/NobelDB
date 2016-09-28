@@ -91,3 +91,9 @@ nobels <- fromJSON(theData)
 # -> Print the names attribute of the 'nobels' data set.
 names(nobels)
 ## [1] "laureates"
+names(nobels$laureates)
+##  [1] "id"              "firstname"       "surname"
+##  [4] "born"            "died"            "bornCountry"
+##  [7] "bornCountryCode" "bornCity"        "diedCountry"
+## [10] "diedCountryCode" "diedCity"        "gender"
+## [13] "prizes"
