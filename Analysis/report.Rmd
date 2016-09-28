@@ -15,3 +15,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Executive Summary
 This report provides an analysis of Nobel Prize Winners in their fields since the very first **Nobel Prize in 1901**. This document illustrates some ways to analyse data from the [Nobel Prize API](https://nobelprize.readme.io/) using the R programming language. The analysis includes multiple prize winners, gender gap, gender by category - Chemestry/Economics/Literature/Medicine and Physiology/Peace/Physics, gender over time, nobel prize share, distribution by age, and distribution by countries etc.
+
+## About Nobel Foundation
+Thankfully, the Nobel Foundation & [Nobelprize.org](http://www.nobelprize.org/) - is a registered trademark, and is produced, managed and maintained by Nobel Media, had created exactly the database of information for every Nobel Prize since 1901, including the Nobel Laureate's biographies, Nobel Lectures, interviews, photos, articles, video clips, and press releases. Nobelprize.org provides comprehensive, first-hand information about the Nobel Prize and Nobel Laureates in Physics, Chemistry, Physiology or Medicine, Literature and Peace starting in 1901, as well as the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel and the Economics Laureates starting in 1969.
+
+I would like to thanks, the 'Nobel Foundation' — had created exactly this dataset right before the 2016 Nobel Prize Announcements. Why, I have come to Nobel Foundation, because there wasn't any other place that had the data as nicely structured and informative.
+
+After, 2016 Nobel Prize Announcements — I "only" needed to add the prizes for 2016. Again the Nobel Foundation helped out by supplying a dataset with all of the Nobel Laureates from 1901.
