@@ -147,6 +147,7 @@ pg <- as.data.frame(table(prizes$category, prizes$gender), stringsAsFactors = FA
 ggplot(pg) + geom_bar(aes(Var1, Freq), stat = "identity", fill = "skyblue3") +
   theme_bw() +
   facet_grid(Var2 ~ .) + labs(x = "Category", y = "Count", title = "All Nobel Prizes by Gender and Category")
+
 # 2.4 Gender over Time
 # -> Is there any indication of an increase in female laureates over time?
 p5 <- as.data.frame(table(prizes$year, prizes$gender), stringsAsFactors = FALSE)
@@ -157,3 +158,16 @@ ggplot(subset(p5.1, gender != "org")) + geom_point(aes(year, log(cumsum), color 
   scale_x_discrete(breaks = seq(1900, 2015, 10)) +
   scale_color_manual(values = c("darkorange", "skyblue3")) +
   labs(x = "Year", y = "log(cumulative sum) of laureates", title = "Cumulative Sum of Nobel Laureates by Gender over Time")
+
+# There is some indication that since about 1975, more women have won prizes than in the preceding years.
+# -> What if we subset by category?
+p6 <- as.data.frame(table(prizes$year, prizes$category, prizes$gender), stringsAsFactors = FALSE)
+colnames(p6) <- c("year", "category", "gender", "Freq")
+p6.1 <- mutate(group_by(p6, category, gender), cumsum = cumsum(Freq))
+ggplot(subset(p6.1, gender != "org")) + geom_point(aes(year, log(cumsum), color = gender)) +
+  facet_grid(category ~ .) +
+  theme_bw() +
+  scale_x_discrete(breaks = seq(1900, 2015, 10)) +
+  scale_color_manual(values = c("darkorange", "skyblue3")) +
+  labs(x = "Year", y = "log(cumulative sum) of laureates",
+       title = "Cumulative Sum of Nobel Laureates by Gender and Category over Time")
