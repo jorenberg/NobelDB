@@ -30,3 +30,11 @@ if (!require("jsonlite")) {
   } else {
   install.packages("jsonlite")
 }
+
+# plyr
+# plyr is a Tools for Splitting, Applying and Combining Data.
+if (!require("plyr")) {
+  stop('The package plyr was not installed!')
+  } else {
+  install.packages("plyr")
+}
