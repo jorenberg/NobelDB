@@ -100,3 +100,10 @@ names(nobels$laureates)
 names(nobels$laureates$prizes[[1]])
 ## [1] "year"         "category"     "share"        "motivation"
 ## [5] "affiliations"
+
+# Conclusion of Primary Investigation.
+# -> The variable `nobels` is a list with one named element, laureates.
+#    The variable laureates is a data frame with 13 columns, one row per laureate.
+#    The last column, prizes is a list of data frames.
+#    √ Note: that analyses that use prizes may count some laureates twice.
+#            However, there are only four such individuals, which makes little difference to these charts.
