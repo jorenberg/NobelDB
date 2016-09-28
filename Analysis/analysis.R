@@ -122,3 +122,10 @@ print(xtable(winners), type = "html", comment = FALSE, include.rownames = FALSE)
 #  2. John Bardeen (physics);
 #  3. Linus Pauling (chemistry, peace);
 #  4. Frederick Sanger (chemistry).
+
+# 2.2 Gender
+# -> Counting up prizes by gender reveals the huge gender gap in Nobel Laureates.
+gender <- as.data.frame(table(nobels$laureates$gender), stringsAsFactors = FALSE)
+ggplot(gender) + geom_bar(aes(Var1, Freq), stat = "identity", fill = "skyblue3") +
+  theme_bw() +
+  labs(x = "Gender", y = "Count", title = "All Nobel Prizes by Gender")
