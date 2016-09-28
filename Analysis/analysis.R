@@ -62,3 +62,11 @@ if (!require("xtable")) {
   } else {
   install.packages("xtable")
 }
+
+# cluster
+# cluster - methods for cluster analysis.
+if (!require("cluster")) {
+  stop('The package cluster was not installed!')
+  } else {
+  install.packages("cluster")
+}
