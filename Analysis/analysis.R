@@ -82,3 +82,7 @@ if (!require("networkD3")) {
 # Setting Working Directory
 # ~~~~~~~~~~~~~~~~~~~~~~~~~
 setwd("~/Users/nobeldb/Desktop/NobelDB")
+
+# 1. Getting the Data
+# -> We use the Nobel Prize API to fetch Nobel Laureates Data in JSON format.
+theData <- "http://api.nobelprize.org/v1/laureate.json"
