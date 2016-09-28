@@ -90,3 +90,4 @@ theData <- "http://api.nobelprize.org/v1/laureate.json"
 nobels <- fromJSON(theData)
 # -> Print the names attribute of the 'nobels' data set.
 names(nobels)
+## [1] "laureates"
