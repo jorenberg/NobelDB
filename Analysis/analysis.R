@@ -136,3 +136,14 @@ ggplot(gender) + geom_bar(aes(Var1, Freq), stat = "identity", fill = "skyblue3")
 # Only one woman, Marie Curie, has been honoured twice, with the 1903 Nobel Prize in Physics and the 1911 Nobel Prize in Chemistry.
 # This means that 48 women in total have been awarded the Nobel Prize between 1901 and 2015.
 # √ 26 are organizations and rest of laureates are male.
+
+# 2.3 Gender by Category
+# -> Chemestry/Economics/Literature/Medicine + Physiology/Peace/Physics
+cnt <- sapply(nobels$laureates$prizes, function(x) nrow(x))
+prizes <- ldply(nobels$laureates$prizes, as.data.frame)
+prizes$id <- rep(nobels$laureates$id, cnt)
+prizes$gender <- rep(nobels$laureates$gender, cnt)
+pg <- as.data.frame(table(prizes$category, prizes$gender), stringsAsFactors = FALSE)
+ggplot(pg) + geom_bar(aes(Var1, Freq), stat = "identity", fill = "skyblue3") +
+  theme_bw() +
+  facet_grid(Var2 ~ .) + labs(x = "Category", y = "Count", title = "All Nobel Prizes by Gender and Category")
