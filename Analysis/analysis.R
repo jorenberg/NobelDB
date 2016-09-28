@@ -107,3 +107,11 @@ names(nobels$laureates$prizes[[1]])
 #    The last column, prizes is a list of data frames.
 #    √ Note: that analyses that use prizes may count some laureates twice.
 #            However, there are only four such individuals, which makes little difference to these charts.
+
+# 2. Analysis
+# 2.1 Multiple Prize Winners
+# -> We can retrieve those laureates who won more than one prize by selecting records,
+#    where 'nobels$laureates$prizes' has more than one row.
+multi <- which(sapply(nobels$laureates$prizes, function(x) nrow(x)) > 1)
+winners <- nobels$laureates[multi, c("firstname", "surname", "born", "bornCountry")]
+print(xtable(winners), type = "html", comment = FALSE, include.rownames = FALSE)
