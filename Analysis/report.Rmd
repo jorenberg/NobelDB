@@ -62,3 +62,92 @@ names(nobels$laureates$prizes[[1]])
 The variable `nobels` is a list with one named element, `laureates`. The variable laureates is a data frame with 13 columns, one row per laureate. The last column, prizes is a list of data frames.
 
 <b>Note</b>: that analyses that use prizes may count some laureates twice. However, there are only four such individuals, which makes little difference to these charts.
+
+## Analysis
+### Multiple Prize Winners
+We can retrieve those laureates who won more than one prize by selecting records, where `nobels$laureates$prizes` has more than one row.
+
+```{r multiple prize winners}
+multi <- which(sapply(nobels$laureates$prizes, function(x) nrow(x)) > 1)
+winners <- nobels$laureates[multi, c("firstname", "surname", "born", "bornCountry")]
+print(xtable(winners), type = "html", comment = FALSE, include.rownames = FALSE)
+```
+
+```{r result of analysis}
+# Result of Analysis.
+# Four individuals have won two prizes:
+#  1. Marie Curie (physics, chemistry);
+#  2. John Bardeen (physics);
+#  3. Linus Pauling (chemistry, peace);
+#  4. Frederick Sanger (chemistry).
+```
+
+### Gender
+Counting up prizes by gender reveals the huge gender gap in Nobel Laureates.
+
+```{r gender gap}
+gender <- as.data.frame(table(nobels$laureates$gender), stringsAsFactors = FALSE)
+ggplot(gender) + geom_bar(aes(Var1, Freq), stat = "identity", fill = "skyblue3") +
+  theme_bw() +
+  labs(x = "Gender", y = "Count", title = "All Nobel Prizes by Gender")
+```
+
+```{r result of gender analysis}
+# Result of Analysis.
+# Nobel Prize Awarded to Women!
+# The Nobel Prize and Prize in Economic Sciences have been awarded to women 49 times between 1901 and 2015.
+# Only one woman, Marie Curie,
+# has been honoured twice, with the 1903 Nobel Prize in Physics & the 1911 Nobel Prize in Chemistry.
+# This means that 48 women in total have been awarded the Nobel Prize between 1901 and 2015.
+# √ 26 are organizations and rest of laureates are male.
+```
+
+### Gender by Category
+Categories: Chemestry/Economics/Literature/Medicine + Physiology/Peace/Physics.
+
+```{r gender by category}
+cnt <- sapply(nobels$laureates$prizes, function(x) nrow(x))
+prizes <- ldply(nobels$laureates$prizes, as.data.frame)
+prizes$id <- rep(nobels$laureates$id, cnt)
+prizes$gender <- rep(nobels$laureates$gender, cnt)
+pg <- as.data.frame(table(prizes$category, prizes$gender), stringsAsFactors = FALSE)
+ggplot(pg) + geom_bar(aes(Var1, Freq), stat = "identity", fill = "skyblue3") +
+  theme_bw() +
+  facet_grid(Var2 ~ .) + labs(x = "Category", y = "Count", title = "All Nobel Prizes by Gender and Category")
+```
+
+### Gender over Time
+Is there any indication of an increase in female laureates over time?
+
+```{r gender over time}
+p5 <- as.data.frame(table(prizes$year, prizes$gender), stringsAsFactors = FALSE)
+colnames(p5) <- c("year", "gender", "Freq")
+p5.1 <- mutate(group_by(p5, gender), cumsum = cumsum(Freq))
+ggplot(subset(p5.1, gender != "org")) + geom_point(aes(year, log(cumsum), color = gender)) +
+  theme_bw() +
+  scale_x_discrete(breaks = seq(1900, 2015, 10)) +
+  scale_color_manual(values = c("darkorange", "skyblue3")) +
+  labs(x = "Year", y = "log(cumulative sum) of laureates", title = "Cumulative Sum of Nobel Laureates by Gender over Time")
+```
+
+**Note**:- There is some indication that since about 1975, more women have won prizes than in the preceding years.
+
+**What if we subset by category?**
+
+```{r subset by category, fig.height=6.0, fig.width=8.0}
+p6 <- as.data.frame(table(prizes$year, prizes$category, prizes$gender), stringsAsFactors = FALSE)
+colnames(p6) <- c("year", "category", "gender", "Freq")
+p6.1 <- mutate(group_by(p6, category, gender), cumsum = cumsum(Freq))
+ggplot(subset(p6.1, gender != "org")) + geom_point(aes(year, log(cumsum), color = gender)) +
+  facet_grid(category ~ .) +
+  theme_bw() +
+  scale_x_discrete(breaks = seq(1900, 2015, 10)) +
+  scale_color_manual(values = c("darkorange", "skyblue3")) +
+  labs(x = "Year", y = "log(cumulative sum) of laureates",
+       title = "Cumulative Sum of Nobel Laureates by Gender and Category over Time")
+```
+
+**Conclusion of Gender Analysis**:-
+There is some indication that since about 1975, more women have won prizes in medicine and peace than in the preceding years. The rate of awards to women for literature also rises after about 1990.
+
+To date, only one woman has won the prize for economics, two women have won for physics and four have won for chemistry.
