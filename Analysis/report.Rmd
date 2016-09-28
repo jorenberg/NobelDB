@@ -22,3 +22,18 @@ Thankfully, the Nobel Foundation & [Nobelprize.org](http://www.nobelprize.org/) 
 I would like to thanks, the 'Nobel Foundation' — had created exactly this dataset right before the 2016 Nobel Prize Announcements. Why, I have come to Nobel Foundation, because there wasn't any other place that had the data as nicely structured and informative.
 
 After, 2016 Nobel Prize Announcements — I "only" needed to add the prizes for 2016. Again the Nobel Foundation helped out by supplying a dataset with all of the Nobel Laureates from 1901.
+
+## Getting Started
+Now, We have to load some required packages, to work on!
+
+```{r loading required packages}
+if (!require("jsonlite") | !require("ggplot2") | !require("plyr") | !require("dplyr") | !require("xtable")) {
+  stop('Some required package(s) is not installed!')
+} else {
+  library("jsonlite")
+  library("ggplot2")
+  library("plyr")
+  library("dplyr")
+  library("xtable")
+}
+```
